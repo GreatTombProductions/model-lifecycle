@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Model Lifecycle Watch — AI Model Deprecation Radar</title>
+<meta name="description" content="Track AI model deprecations and retirements straight from vendor pages. See what's retired, what's deprecated, what's replacing it — and when.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Model Lifecycle Watch</h1>
+  <p class="subtitle">AI model deprecations &amp; retirements, read directly from vendor pages. No aggregators, no content farms — the vendor's own table is the source.</p>
+  <div id="asof"></div>
+</header>
+
+<main>
+  <section class="controls">
+    <input type="search" id="search" placeholder="Search model name (e.g. opus, gpt-5, o3, haiku, deepseek)…" autocomplete="off">
+    <div class="filters">
+      <button class="filter active" data-status="all">All</button>
+      <button class="filter" data-status="deprecated">⚠ Deprecated</button>
+      <button class="filter" data-status="active">Active</button>
+      <button class="filter" data-status="retired">Retired</button>
+    </div>
+    <div class="vendor-filter">
+      <label><input type="checkbox" class="vendor" value="Anthropic" checked> Anthropic</label>
+      <label><input type="checkbox" class="vendor" value="OpenAI" checked> OpenAI</label>
+      <label><input type="checkbox" class="vendor" value="DeepSeek" checked> DeepSeek</label>
+    </div>
+  </section>
+
+  <div id="summary" class="summary"></div>
+  <div id="count" class="count"></div>
+  <div id="cards" class="cards"></div>
+  <div id="empty" class="empty hidden">No models match. Try another name or clear filters.</div>
+</main>
+
+<footer>
+  <p>Data read from the vendors' own deprecation pages (Anthropic, OpenAI). DeepSeek publishes no deprecation page — its current models are listed in its API docs; treat it as a documented gap, not a clean bill of health.</p>
+  <p>Vendor pages change. Re-run the open-source pipeline (<code>pipeline/fetch_parse.py</code>) to refresh. This site is a snapshot with an as-of date; the freshness claim lives on every record.</p>
+</footer>
+
+<script src="app.js"></script>
+<br><span style="font-size:0.85em">&#8226;</span> <a href="https://github.com/GreatTombProductions/quest-board/issues/new?title=model-lifecycle%3A%20%5Bbrief%20description%5D&labels=feedback%2Cmodel-lifecycle" target="_blank" rel="noopener" style="color:var(--text2)">Found an issue or have feedback?</a>
+</body>
+</html>
