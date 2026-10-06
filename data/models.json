@@ -1,150 +1,36 @@
 {
-  "generated_at": "2026-08-16T13:37:26+00:00",
-  "as_of": "2026-08-16",
+  "generated_at": "2026-10-06T23:20:16+00:00",
+  "as_of": "2026-10-06",
   "sources": [
     {
       "vendor": "Anthropic",
       "url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
       "status": "ok",
-      "fetched_at": "2026-08-16T13:37:26+00:00",
-      "bytes": 953764,
+      "fetched_at": "2026-10-06T23:17:29+00:00",
+      "bytes": 466301,
+      "raw_sha256": "4a4cccf77b4d6e5f195bebe4bb03d1371a0df07218595b5355308a2ea105ed23",
       "note": null
     },
     {
       "vendor": "OpenAI",
       "url": "https://developers.openai.com/api/docs/deprecations",
       "status": "ok",
-      "fetched_at": "2026-08-16T13:37:26+00:00",
-      "bytes": 441672,
+      "fetched_at": "2026-10-06T23:17:29+00:00",
+      "bytes": 490261,
+      "raw_sha256": "74cdaee2741ecbb302b747fe7cd45bfa254218373e5d42ea351ac2e67a546805",
       "note": null
     },
     {
       "vendor": "DeepSeek",
       "url": "https://api-docs.deepseek.com/",
-      "status": "no-deprecation-page",
-      "fetched_at": "2026-08-16T13:37:26+00:00",
-      "bytes": null,
-      "note": "DeepSeek publishes no model deprecation page; api-docs lists current models only. Listed as a documented gap (S119 honest-coverage rule), not hidden."
+      "status": "gap",
+      "fetched_at": "2026-10-06T23:17:29+00:00",
+      "bytes": 48088,
+      "raw_sha256": "7ce9db1b1cc7e2efafe7cbfd57b9d46d240c20399f7bd87672c7e3a5250ccdd0",
+      "note": "DeepSeek publishes no model deprecation page. Only retirements stated in its API docs (the model table's footnote) are listed, and it publishes no retirement dates. Treat it as a documented gap, not a clean bill of health."
     }
   ],
   "models": [
-    {
-      "vendor": "OpenAI",
-      "family": "sora-2",
-      "model_id": "sora-2",
-      "status": "deprecated",
-      "announced": "2026-03-24",
-      "retirement": "2026-09-24",
-      "replacement": "---",
-      "source_url": "https://developers.openai.com/api/docs/deprecations",
-      "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
-    },
-    {
-      "vendor": "OpenAI",
-      "family": "sora-2-2025-10-06",
-      "model_id": "sora-2-2025-10-06",
-      "status": "deprecated",
-      "announced": "2026-03-24",
-      "retirement": "2026-09-24",
-      "replacement": "---",
-      "source_url": "https://developers.openai.com/api/docs/deprecations",
-      "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
-    },
-    {
-      "vendor": "OpenAI",
-      "family": "sora-2-2025-12-08",
-      "model_id": "sora-2-2025-12-08",
-      "status": "deprecated",
-      "announced": "2026-03-24",
-      "retirement": "2026-09-24",
-      "replacement": "---",
-      "source_url": "https://developers.openai.com/api/docs/deprecations",
-      "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
-    },
-    {
-      "vendor": "OpenAI",
-      "family": "sora-2-pro",
-      "model_id": "sora-2-pro",
-      "status": "deprecated",
-      "announced": "2026-03-24",
-      "retirement": "2026-09-24",
-      "replacement": "---",
-      "source_url": "https://developers.openai.com/api/docs/deprecations",
-      "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
-    },
-    {
-      "vendor": "OpenAI",
-      "family": "sora-2-pro-2025-10-06",
-      "model_id": "sora-2-pro-2025-10-06",
-      "status": "deprecated",
-      "announced": "2026-03-24",
-      "retirement": "2026-09-24",
-      "replacement": "---",
-      "source_url": "https://developers.openai.com/api/docs/deprecations",
-      "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
-    },
-    {
-      "vendor": "OpenAI",
-      "family": "babbage-002",
-      "model_id": "babbage-002",
-      "status": "deprecated",
-      "announced": "2025-09-26",
-      "retirement": "2026-09-28",
-      "replacement": "gpt-5.6-terra",
-      "source_url": "https://developers.openai.com/api/docs/deprecations",
-      "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
-    },
-    {
-      "vendor": "OpenAI",
-      "family": "davinci-002",
-      "model_id": "davinci-002",
-      "status": "deprecated",
-      "announced": "2025-09-26",
-      "retirement": "2026-09-28",
-      "replacement": "gpt-5.6-terra",
-      "source_url": "https://developers.openai.com/api/docs/deprecations",
-      "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
-    },
-    {
-      "vendor": "OpenAI",
-      "family": "gpt-3.5-turbo-1106",
-      "model_id": "gpt-3.5-turbo-1106",
-      "status": "deprecated",
-      "announced": "2025-09-26",
-      "retirement": "2026-09-28",
-      "replacement": "gpt-5.6-terra",
-      "source_url": "https://developers.openai.com/api/docs/deprecations",
-      "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
-    },
-    {
-      "vendor": "OpenAI",
-      "family": "gpt-3.5-turbo-instruct",
-      "model_id": "gpt-3.5-turbo-instruct",
-      "status": "deprecated",
-      "announced": "2025-09-26",
-      "retirement": "2026-09-28",
-      "replacement": "gpt-5.6-terra",
-      "source_url": "https://developers.openai.com/api/docs/deprecations",
-      "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
-    },
     {
       "vendor": "OpenAI",
       "family": "ft-babbage-002",
@@ -155,8 +41,8 @@
       "replacement": "gpt-5.6-terra",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -168,8 +54,8 @@
       "replacement": "gpt-5.6-terra",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -181,8 +67,8 @@
       "replacement": "gpt-5.6-terra",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -194,8 +80,8 @@
       "replacement": "gpt-5.6-sol",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -207,8 +93,8 @@
       "replacement": "gpt-5.6-luna",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -220,8 +106,8 @@
       "replacement": "gpt-5.6-terra",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -233,8 +119,8 @@
       "replacement": "gpt-5.6-terra",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -246,8 +132,8 @@
       "replacement": "gpt-5.6-terra",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -259,8 +145,8 @@
       "replacement": "gpt-5.6-terra",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -272,8 +158,8 @@
       "replacement": "gpt-5.6-sol",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -285,8 +171,8 @@
       "replacement": "gpt-5.6-sol",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -298,8 +184,8 @@
       "replacement": "gpt-5.6-sol",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -311,8 +197,8 @@
       "replacement": "gpt-5.6-sol",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -324,8 +210,8 @@
       "replacement": "gpt-5.6-sol",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -337,8 +223,8 @@
       "replacement": "gpt-5.6-sol",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -350,8 +236,8 @@
       "replacement": "gpt-5.6-sol",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -363,8 +249,8 @@
       "replacement": "gpt-5.6-sol",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -376,8 +262,8 @@
       "replacement": "gpt-5.6-luna",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -389,8 +275,8 @@
       "replacement": "gpt-5.6-luna",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -402,8 +288,8 @@
       "replacement": "gpt-5.6-sol",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -412,11 +298,11 @@
       "status": "deprecated",
       "announced": "2026-04-22",
       "retirement": "2026-10-23",
-      "replacement": "gpt-image-2",
+      "replacement": "gpt-image-2.5-sunburst or gpt-image-2.5-flare",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -428,8 +314,8 @@
       "replacement": "gpt-5.6-sol",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -441,8 +327,8 @@
       "replacement": "gpt-5.6-sol",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -454,8 +340,8 @@
       "replacement": "gpt-5.6-sol ( reasoning.mode: pro )",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -467,8 +353,8 @@
       "replacement": "gpt-5.6-sol ( reasoning.mode: pro )",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -480,8 +366,8 @@
       "replacement": "gpt-5.6-sol",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -493,8 +379,8 @@
       "replacement": "gpt-5.6-sol",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -506,8 +392,8 @@
       "replacement": "gpt-5.6-terra",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -519,8 +405,23 @@
       "replacement": "gpt-5.6-terra",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
+    },
+    {
+      "vendor": "Anthropic",
+      "model_id": "claude-sonnet-4-5-20250929",
+      "status": "deprecated",
+      "stated_status": "Deprecated",
+      "announced": "2026-09-30",
+      "retirement": "2026-11-30",
+      "retirement_not_before": null,
+      "replacement": "claude-sonnet-5-5",
+      "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
+      "note": null,
+      "family": "Claude Sonnet 4.5",
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -529,11 +430,11 @@
       "status": "deprecated",
       "announced": "2026-06-02",
       "retirement": "2026-12-01",
-      "replacement": "gpt-image-2",
+      "replacement": "gpt-image-2.5-sunburst or gpt-image-2.5-flare",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -542,11 +443,11 @@
       "status": "deprecated",
       "announced": "2026-06-02",
       "retirement": "2026-12-01",
-      "replacement": "gpt-image-2",
+      "replacement": "gpt-image-2.5-sunburst or gpt-image-2.5-flare",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -555,11 +456,11 @@
       "status": "deprecated",
       "announced": "2026-06-02",
       "retirement": "2026-12-01",
-      "replacement": "gpt-image-2",
+      "replacement": "gpt-image-2.5-sunburst or gpt-image-2.5-flare",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -571,8 +472,8 @@
       "replacement": "gpt-5.6-sol",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -584,8 +485,8 @@
       "replacement": "gpt-5.6-terra",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -597,8 +498,8 @@
       "replacement": "gpt-5.6-luna",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -610,8 +511,8 @@
       "replacement": "gpt-5.6-sol ( reasoning.mode: pro )",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -623,8 +524,8 @@
       "replacement": "gpt-5.6-sol",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -636,8 +537,60 @@
       "replacement": "gpt-5.6-sol ( reasoning.mode: pro )",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
+    },
+    {
+      "vendor": "OpenAI",
+      "family": "gpt-4o-mini-tts-2025-03-20",
+      "model_id": "gpt-4o-mini-tts-2025-03-20",
+      "status": "deprecated",
+      "announced": "2026-10-01",
+      "retirement": "2027-01-06",
+      "replacement": "gpt-realtime-2.1-mini",
+      "source_url": "https://developers.openai.com/api/docs/deprecations",
+      "note": null,
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
+    },
+    {
+      "vendor": "OpenAI",
+      "family": "gpt-4o-mini-tts-2025-12-15",
+      "model_id": "gpt-4o-mini-tts-2025-12-15",
+      "status": "deprecated",
+      "announced": "2026-10-01",
+      "retirement": "2027-01-06",
+      "replacement": "gpt-realtime-2.1-mini",
+      "source_url": "https://developers.openai.com/api/docs/deprecations",
+      "note": null,
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
+    },
+    {
+      "vendor": "OpenAI",
+      "family": "tts-1",
+      "model_id": "tts-1",
+      "status": "deprecated",
+      "announced": "2026-10-01",
+      "retirement": "2027-01-06",
+      "replacement": "gpt-realtime-2.1-mini",
+      "source_url": "https://developers.openai.com/api/docs/deprecations",
+      "note": null,
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
+    },
+    {
+      "vendor": "OpenAI",
+      "family": "tts-1-hd",
+      "model_id": "tts-1-hd",
+      "status": "deprecated",
+      "announced": "2026-10-01",
+      "retirement": "2027-01-06",
+      "replacement": "gpt-realtime-2.1-mini",
+      "source_url": "https://developers.openai.com/api/docs/deprecations",
+      "note": null,
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -649,8 +602,8 @@
       "replacement": "gpt-audio-1.5",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -662,8 +615,8 @@
       "replacement": "gpt-audio-1.5",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -675,8 +628,8 @@
       "replacement": "gpt-realtime-2.1-mini",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -688,8 +641,8 @@
       "replacement": "gpt-4o-mini-transcribe-2025-12-15",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -701,8 +654,8 @@
       "replacement": "gpt-realtime-2.1",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -714,8 +667,8 @@
       "replacement": "gpt-audio-1.5",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -727,8 +680,8 @@
       "replacement": "gpt-audio-1.5",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -740,8 +693,8 @@
       "replacement": "gpt-realtime-2.1",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -753,148 +706,324 @@
       "replacement": "gpt-realtime-2.1-mini",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
+      "vendor": "OpenAI",
+      "family": "gpt-4o-mini-transcribe",
+      "model_id": "gpt-4o-mini-transcribe",
+      "status": "deprecated",
+      "announced": "2026-08-26",
+      "retirement": "2027-02-26",
+      "replacement": "gpt-live-transcribe or gpt-transcribe",
+      "source_url": "https://developers.openai.com/api/docs/deprecations",
+      "note": null,
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
+    },
+    {
+      "vendor": "OpenAI",
+      "family": "gpt-4o-transcribe",
+      "model_id": "gpt-4o-transcribe",
+      "status": "deprecated",
+      "announced": "2026-08-26",
+      "retirement": "2027-02-26",
+      "replacement": "gpt-live-transcribe or gpt-transcribe",
+      "source_url": "https://developers.openai.com/api/docs/deprecations",
+      "note": null,
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
+    },
+    {
+      "vendor": "OpenAI",
+      "family": "gpt-4o-transcribe-diarize",
+      "model_id": "gpt-4o-transcribe-diarize",
+      "status": "deprecated",
+      "announced": "2026-08-26",
+      "retirement": "2027-02-26",
+      "replacement": "gpt-live-transcribe or gpt-transcribe",
+      "source_url": "https://developers.openai.com/api/docs/deprecations",
+      "note": null,
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
+    },
+    {
+      "vendor": "OpenAI",
+      "family": "whisper-1",
+      "model_id": "whisper-1",
+      "status": "deprecated",
+      "announced": "2026-08-26",
+      "retirement": "2027-02-26",
+      "replacement": "gpt-live-transcribe or gpt-transcribe",
+      "source_url": "https://developers.openai.com/api/docs/deprecations",
+      "note": null,
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
+    },
+    {
+      "vendor": "OpenAI",
+      "family": "gpt-5.1",
+      "model_id": "gpt-5.1",
+      "status": "deprecated",
+      "announced": "2026-10-01",
+      "retirement": "2027-04-01",
+      "replacement": "gpt-6-sol",
+      "source_url": "https://developers.openai.com/api/docs/deprecations",
+      "note": null,
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
+    },
+    {
+      "vendor": "OpenAI",
+      "family": "gpt-5.3-codex",
+      "model_id": "gpt-5.3-codex",
+      "status": "deprecated",
+      "announced": "2026-10-01",
+      "retirement": "2027-04-01",
+      "replacement": "gpt-6-sol",
+      "source_url": "https://developers.openai.com/api/docs/deprecations",
+      "note": null,
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
+    },
+    {
+      "vendor": "OpenAI",
+      "family": "gpt-5.4-nano",
+      "model_id": "gpt-5.4-nano",
+      "status": "deprecated",
+      "announced": "2026-10-01",
+      "retirement": "2027-04-01",
+      "replacement": "gpt-6-luna",
+      "source_url": "https://developers.openai.com/api/docs/deprecations",
+      "note": null,
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
+    },
+    {
+      "vendor": "Anthropic",
+      "model_id": "claude-mythos-preview",
+      "status": "deprecated",
+      "stated_status": "Deprecated",
+      "announced": "2026-06-09",
+      "retirement": null,
+      "retirement_not_before": null,
+      "replacement": null,
+      "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
+      "note": "Deprecated; retirement date to be announced",
+      "family": "Claude Mythos Preview",
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
+    },
+    {
+      "vendor": "Anthropic",
       "model_id": "claude-fable-5",
       "status": "active",
+      "stated_status": "Active",
       "announced": null,
       "retirement": null,
       "retirement_not_before": "2027-06-09",
-      "note": null,
-      "vendor": "Anthropic",
-      "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
       "replacement": null,
+      "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
+      "note": null,
       "family": "Claude Fable 5",
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
+      "vendor": "Anthropic",
+      "model_id": "claude-fable-5-1",
+      "status": "active",
+      "stated_status": "Active",
+      "announced": null,
+      "retirement": null,
+      "retirement_not_before": "2027-09-01",
+      "replacement": null,
+      "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
+      "note": null,
+      "family": "Claude Fable 5.1",
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
+    },
+    {
+      "vendor": "Anthropic",
       "model_id": "claude-haiku-4-5-20251001",
       "status": "active",
+      "stated_status": "Active",
       "announced": null,
       "retirement": null,
       "retirement_not_before": "2026-10-15",
-      "note": null,
-      "vendor": "Anthropic",
-      "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
       "replacement": null,
+      "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
+      "note": null,
       "family": "Claude Haiku 4.5",
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
+      "vendor": "Anthropic",
+      "model_id": "claude-mythos-5",
+      "status": "active",
+      "stated_status": "Active",
+      "announced": null,
+      "retirement": null,
+      "retirement_not_before": "2027-06-09",
+      "replacement": null,
+      "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
+      "note": null,
+      "family": "Claude Mythos 5",
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
+    },
+    {
+      "vendor": "Anthropic",
+      "model_id": "claude-mythos-5-1",
+      "status": "active",
+      "stated_status": "Active",
+      "announced": null,
+      "retirement": null,
+      "retirement_not_before": "2027-09-01",
+      "replacement": null,
+      "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
+      "note": null,
+      "family": "Claude Mythos 5.1",
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
+    },
+    {
+      "vendor": "Anthropic",
       "model_id": "claude-opus-4-5-20251101",
       "status": "active",
+      "stated_status": "Active",
       "announced": null,
       "retirement": null,
       "retirement_not_before": "2026-11-24",
-      "note": null,
-      "vendor": "Anthropic",
-      "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
       "replacement": null,
+      "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
+      "note": null,
       "family": "Claude Opus 4.5",
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
+      "vendor": "Anthropic",
       "model_id": "claude-opus-4-6",
       "status": "active",
+      "stated_status": "Active",
       "announced": null,
       "retirement": null,
       "retirement_not_before": "2027-02-05",
-      "note": null,
-      "vendor": "Anthropic",
-      "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
       "replacement": null,
+      "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
+      "note": null,
       "family": "Claude Opus 4.6",
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
+      "vendor": "Anthropic",
       "model_id": "claude-opus-4-7",
       "status": "active",
+      "stated_status": "Active",
       "announced": null,
       "retirement": null,
       "retirement_not_before": "2027-04-16",
-      "note": null,
-      "vendor": "Anthropic",
-      "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
       "replacement": null,
+      "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
+      "note": null,
       "family": "Claude Opus 4.7",
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
+      "vendor": "Anthropic",
       "model_id": "claude-opus-4-8",
       "status": "active",
+      "stated_status": "Active",
       "announced": null,
       "retirement": null,
       "retirement_not_before": "2027-05-28",
-      "note": null,
-      "vendor": "Anthropic",
-      "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
       "replacement": null,
+      "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
+      "note": null,
       "family": "Claude Opus 4.8",
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
+      "vendor": "Anthropic",
       "model_id": "claude-opus-5",
       "status": "active",
+      "stated_status": "Active",
       "announced": null,
       "retirement": null,
       "retirement_not_before": "2027-07-24",
-      "note": null,
-      "vendor": "Anthropic",
-      "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
       "replacement": null,
+      "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
+      "note": null,
       "family": "Claude Opus 5",
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
-      "model_id": "claude-sonnet-4-5-20250929",
+      "vendor": "Anthropic",
+      "model_id": "claude-opus-5-5",
       "status": "active",
+      "stated_status": "Active",
       "announced": null,
       "retirement": null,
-      "retirement_not_before": "2026-09-29",
-      "note": null,
-      "vendor": "Anthropic",
-      "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
+      "retirement_not_before": "2027-09-22",
       "replacement": null,
-      "family": "Claude Sonnet 4.5",
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
+      "note": null,
+      "family": "Claude Opus 5.5",
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
+      "vendor": "Anthropic",
       "model_id": "claude-sonnet-4-6",
       "status": "active",
+      "stated_status": "Active",
       "announced": null,
       "retirement": null,
       "retirement_not_before": "2027-02-17",
-      "note": null,
-      "vendor": "Anthropic",
-      "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
       "replacement": null,
+      "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
+      "note": null,
       "family": "Claude Sonnet 4.6",
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
+      "vendor": "Anthropic",
       "model_id": "claude-sonnet-5",
       "status": "active",
+      "stated_status": "Active",
       "announced": null,
       "retirement": null,
       "retirement_not_before": "2027-06-30",
-      "note": null,
-      "vendor": "Anthropic",
-      "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
       "replacement": null,
+      "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
+      "note": null,
       "family": "Claude Sonnet 5",
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
+    },
+    {
+      "vendor": "Anthropic",
+      "model_id": "claude-sonnet-5-5",
+      "status": "active",
+      "stated_status": "Active",
+      "announced": null,
+      "retirement": null,
+      "retirement_not_before": "2027-09-28",
+      "replacement": null,
+      "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
+      "note": null,
+      "family": "Claude Sonnet 5.5",
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -906,8 +1035,8 @@
       "replacement": "gpt-4o",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -919,8 +1048,8 @@
       "replacement": "gpt-4o",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -932,8 +1061,8 @@
       "replacement": "gpt-4o",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -945,8 +1074,8 @@
       "replacement": "gpt-4o",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -958,8 +1087,8 @@
       "replacement": "babbage-002",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -971,8 +1100,8 @@
       "replacement": "babbage-002",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -984,8 +1113,8 @@
       "replacement": "gpt-3.5-turbo-instruct",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -997,8 +1126,8 @@
       "replacement": "gpt-4o",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1010,8 +1139,8 @@
       "replacement": "text-embedding-3-small",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1023,8 +1152,8 @@
       "replacement": "text-embedding-3-small",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1036,8 +1165,8 @@
       "replacement": "text-embedding-3-small",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1049,8 +1178,8 @@
       "replacement": "text-embedding-3-small",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1062,8 +1191,8 @@
       "replacement": "davinci-002",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1075,8 +1204,8 @@
       "replacement": "davinci-002",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1088,8 +1217,8 @@
       "replacement": "gpt-3.5-turbo-instruct",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1101,8 +1230,8 @@
       "replacement": "gpt-3.5-turbo-instruct",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1114,8 +1243,8 @@
       "replacement": "gpt-3.5-turbo-instruct",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1127,8 +1256,8 @@
       "replacement": "gpt-3.5-turbo-instruct",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1140,8 +1269,8 @@
       "replacement": "gpt-3.5-turbo-instruct",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1153,8 +1282,8 @@
       "replacement": "gpt-3.5-turbo-instruct",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1166,8 +1295,8 @@
       "replacement": "gpt-4o",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1179,8 +1308,8 @@
       "replacement": "text-embedding-3-small",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1192,8 +1321,8 @@
       "replacement": "text-embedding-3-small",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1205,8 +1334,8 @@
       "replacement": "text-embedding-3-small",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1218,8 +1347,8 @@
       "replacement": "text-embedding-3-small",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1231,8 +1360,8 @@
       "replacement": "text-embedding-3-small",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1244,8 +1373,8 @@
       "replacement": "text-embedding-3-small",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1257,8 +1386,8 @@
       "replacement": "text-embedding-3-small",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1270,8 +1399,8 @@
       "replacement": "text-embedding-3-small",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1283,8 +1412,8 @@
       "replacement": "text-embedding-3-small",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1296,8 +1425,8 @@
       "replacement": "text-embedding-3-small",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1309,8 +1438,8 @@
       "replacement": "text-embedding-3-small",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1322,8 +1451,8 @@
       "replacement": "text-embedding-3-small",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1335,8 +1464,8 @@
       "replacement": "gpt-3.5-turbo",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1348,8 +1477,8 @@
       "replacement": "gpt-3.5-turbo",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1361,106 +1490,106 @@
       "replacement": "gpt-3.5-turbo",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "Anthropic",
-      "family": "Claude 1.0",
       "model_id": "claude-1.0",
       "status": "retired",
-      "announced": null,
+      "announced": "2024-09-04",
       "retirement": "2024-11-06",
       "retirement_not_before": null,
       "replacement": "claude-haiku-4-5-20251001",
       "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
-      "note": "Retired prior to current lifecycle table",
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "note": "Not in the current status table; dates from the vendor's deprecation history",
+      "family": "Claude 1.0",
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "Anthropic",
-      "family": "Claude 1.1",
       "model_id": "claude-1.1",
       "status": "retired",
-      "announced": null,
+      "announced": "2024-09-04",
       "retirement": "2024-11-06",
       "retirement_not_before": null,
       "replacement": "claude-haiku-4-5-20251001",
       "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
-      "note": "Retired prior to current lifecycle table",
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "note": "Not in the current status table; dates from the vendor's deprecation history",
+      "family": "Claude 1.1",
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "Anthropic",
-      "family": "Claude 1.2",
       "model_id": "claude-1.2",
       "status": "retired",
-      "announced": null,
+      "announced": "2024-09-04",
       "retirement": "2024-11-06",
       "retirement_not_before": null,
       "replacement": "claude-haiku-4-5-20251001",
       "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
-      "note": "Retired prior to current lifecycle table",
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "note": "Not in the current status table; dates from the vendor's deprecation history",
+      "family": "Claude 1.2",
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "Anthropic",
-      "family": "Claude 1.3",
       "model_id": "claude-1.3",
       "status": "retired",
-      "announced": null,
+      "announced": "2024-09-04",
       "retirement": "2024-11-06",
       "retirement_not_before": null,
       "replacement": "claude-haiku-4-5-20251001",
       "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
-      "note": "Retired prior to current lifecycle table",
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "note": "Not in the current status table; dates from the vendor's deprecation history",
+      "family": "Claude 1.3",
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "Anthropic",
-      "family": "Claude Instant 1.0",
       "model_id": "claude-instant-1.0",
       "status": "retired",
-      "announced": null,
+      "announced": "2024-09-04",
       "retirement": "2024-11-06",
       "retirement_not_before": null,
       "replacement": "claude-haiku-4-5-20251001",
       "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
-      "note": "Retired prior to current lifecycle table",
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "note": "Not in the current status table; dates from the vendor's deprecation history",
+      "family": "Claude Instant 1.0",
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "Anthropic",
-      "family": "Claude Instant 1.1",
       "model_id": "claude-instant-1.1",
       "status": "retired",
-      "announced": null,
+      "announced": "2024-09-04",
       "retirement": "2024-11-06",
       "retirement_not_before": null,
       "replacement": "claude-haiku-4-5-20251001",
       "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
-      "note": "Retired prior to current lifecycle table",
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "note": "Not in the current status table; dates from the vendor's deprecation history",
+      "family": "Claude Instant 1.1",
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "Anthropic",
-      "family": "Claude Instant 1.2",
       "model_id": "claude-instant-1.2",
       "status": "retired",
-      "announced": null,
+      "announced": "2024-09-04",
       "retirement": "2024-11-06",
       "retirement_not_before": null,
       "replacement": "claude-haiku-4-5-20251001",
       "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
-      "note": "Retired prior to current lifecycle table",
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "note": "Not in the current status table; dates from the vendor's deprecation history",
+      "family": "Claude Instant 1.2",
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1472,8 +1601,8 @@
       "replacement": "gpt-4o",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1485,8 +1614,8 @@
       "replacement": "gpt-4o",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1498,8 +1627,8 @@
       "replacement": "gpt-4o",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1511,8 +1640,8 @@
       "replacement": "gpt-4o",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1524,8 +1653,8 @@
       "replacement": "gpt-4o",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1537,12 +1666,11 @@
       "replacement": "gpt-4.1",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "Anthropic",
-      "family": "Claude 2.0",
       "model_id": "claude-2.0",
       "status": "retired",
       "announced": "2025-01-21",
@@ -1550,13 +1678,13 @@
       "retirement_not_before": null,
       "replacement": "claude-opus-4-8",
       "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
-      "note": "Retired prior to current lifecycle table",
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "note": "Not in the current status table; dates from the vendor's deprecation history",
+      "family": "Claude 2.0",
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "Anthropic",
-      "family": "Claude 2.1",
       "model_id": "claude-2.1",
       "status": "retired",
       "announced": "2025-01-21",
@@ -1564,13 +1692,13 @@
       "retirement_not_before": null,
       "replacement": "claude-opus-4-8",
       "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
-      "note": "Retired prior to current lifecycle table",
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "note": "Not in the current status table; dates from the vendor's deprecation history",
+      "family": "Claude 2.1",
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "Anthropic",
-      "family": "Claude 3 Sonnet",
       "model_id": "claude-3-sonnet-20240229",
       "status": "retired",
       "announced": "2025-01-21",
@@ -1578,9 +1706,10 @@
       "retirement_not_before": null,
       "replacement": "claude-sonnet-4-6",
       "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
-      "note": "Retired prior to current lifecycle table",
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "note": "Not in the current status table; dates from the vendor's deprecation history",
+      "family": "Claude 3 Sonnet",
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1592,8 +1721,8 @@
       "replacement": "o3",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1605,8 +1734,8 @@
       "replacement": "gpt-audio-1.5",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1618,8 +1747,8 @@
       "replacement": "gpt-realtime-1.5",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1631,8 +1760,8 @@
       "replacement": "o4-mini",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1644,8 +1773,8 @@
       "replacement": "omni-moderation",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1657,8 +1786,8 @@
       "replacement": "omni-moderation",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1670,12 +1799,11 @@
       "replacement": "omni-moderation",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "Anthropic",
-      "family": "Claude 3.5 Sonnet",
       "model_id": "claude-3-5-sonnet-20240620",
       "status": "retired",
       "announced": "2025-08-13",
@@ -1683,13 +1811,13 @@
       "retirement_not_before": null,
       "replacement": "claude-sonnet-4-6",
       "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
-      "note": "Retired prior to current lifecycle table",
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "note": "Not in the current status table; dates from the vendor's deprecation history",
+      "family": "Claude 3.5 Sonnet",
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "Anthropic",
-      "family": "Claude 3.5 Sonnet",
       "model_id": "claude-3-5-sonnet-20241022",
       "status": "retired",
       "announced": "2025-08-13",
@@ -1697,13 +1825,13 @@
       "retirement_not_before": null,
       "replacement": "claude-sonnet-4-6",
       "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
-      "note": "Retired prior to current lifecycle table",
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "note": "Not in the current status table; dates from the vendor's deprecation history",
+      "family": "Claude 3.5 Sonnet",
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "Anthropic",
-      "family": "Claude 3 Opus",
       "model_id": "claude-3-opus-20240229",
       "status": "retired",
       "announced": "2025-06-30",
@@ -1711,9 +1839,10 @@
       "retirement_not_before": null,
       "replacement": "claude-opus-4-8",
       "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
-      "note": "Retired prior to current lifecycle table",
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "note": "Not in the current status table; dates from the vendor's deprecation history",
+      "family": "Claude 3 Opus",
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1725,8 +1854,8 @@
       "replacement": "gpt-5-codex-mini",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1738,50 +1867,53 @@
       "replacement": "gpt-5.1-chat-latest",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
+      "vendor": "Anthropic",
       "model_id": "claude-3-5-haiku-20241022",
       "status": "retired",
+      "stated_status": "Retired",
       "announced": "2025-12-19",
       "retirement": "2026-02-19",
       "retirement_not_before": null,
-      "note": null,
-      "vendor": "Anthropic",
-      "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
       "replacement": "claude-haiku-4-5-20251001",
+      "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
+      "note": null,
       "family": "Claude 3.5 Haiku",
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
+      "vendor": "Anthropic",
       "model_id": "claude-3-7-sonnet-20250219",
       "status": "retired",
+      "stated_status": "Retired",
       "announced": "2025-10-28",
       "retirement": "2026-02-19",
       "retirement_not_before": null,
-      "note": null,
-      "vendor": "Anthropic",
-      "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
       "replacement": "claude-sonnet-4-6",
+      "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
+      "note": null,
       "family": "Claude 3.7 Sonnet",
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
+      "vendor": "Anthropic",
       "model_id": "claude-3-haiku-20240307",
       "status": "retired",
+      "stated_status": "Retired",
       "announced": "2026-02-19",
       "retirement": "2026-04-20",
       "retirement_not_before": null,
-      "note": null,
-      "vendor": "Anthropic",
-      "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
       "replacement": "claude-haiku-4-5-20251001",
+      "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
+      "note": null,
       "family": "Claude 3 Haiku",
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1793,8 +1925,8 @@
       "replacement": "gpt-audio-1.5",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1806,8 +1938,8 @@
       "replacement": "gpt-audio-mini",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1819,8 +1951,8 @@
       "replacement": "gpt-realtime-mini",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1832,8 +1964,8 @@
       "replacement": "gpt-realtime-1.5",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1845,8 +1977,8 @@
       "replacement": "gpt-realtime-1.5",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1858,8 +1990,8 @@
       "replacement": "gpt-realtime-1.5",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1871,8 +2003,8 @@
       "replacement": "gpt-image-2 , gpt-image-1 , or gpt-image-1-mini",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1884,36 +2016,38 @@
       "replacement": "gpt-image-2 , gpt-image-1 , or gpt-image-1-mini",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
+      "vendor": "Anthropic",
       "model_id": "claude-opus-4-20250514",
       "status": "retired",
+      "stated_status": "Retired",
       "announced": "2026-04-14",
       "retirement": "2026-06-15",
       "retirement_not_before": null,
-      "note": null,
-      "vendor": "Anthropic",
-      "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
       "replacement": "claude-opus-4-8",
+      "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
+      "note": null,
       "family": "Claude Opus 4",
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
+      "vendor": "Anthropic",
       "model_id": "claude-sonnet-4-20250514",
       "status": "retired",
+      "stated_status": "Retired",
       "announced": "2026-04-14",
       "retirement": "2026-06-15",
       "retirement_not_before": null,
-      "note": null,
-      "vendor": "Anthropic",
-      "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
       "replacement": "claude-sonnet-4-6",
+      "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
+      "note": null,
       "family": "Claude Sonnet 4",
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1925,8 +2059,8 @@
       "replacement": "gpt-5.6-terra",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1938,8 +2072,8 @@
       "replacement": "gpt-5.6-terra",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1951,8 +2085,8 @@
       "replacement": "gpt-5.6-terra",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1964,8 +2098,8 @@
       "replacement": "gpt-5.6-terra",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1977,8 +2111,8 @@
       "replacement": "gpt-5.6-sol",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -1990,8 +2124,8 @@
       "replacement": "gpt-5.6-sol",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -2003,8 +2137,8 @@
       "replacement": "gpt-5.6-sol",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -2016,8 +2150,8 @@
       "replacement": "gpt-5.6-sol",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -2029,8 +2163,8 @@
       "replacement": "gpt-5.6-sol",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -2042,8 +2176,8 @@
       "replacement": "gpt-5.6-terra",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -2055,8 +2189,8 @@
       "replacement": "gpt-5.6-sol",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -2068,8 +2202,8 @@
       "replacement": "gpt-audio-1.5",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -2081,8 +2215,8 @@
       "replacement": "gpt-realtime-2.1-mini",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -2094,8 +2228,8 @@
       "replacement": "gpt-5.6-sol",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -2107,8 +2241,8 @@
       "replacement": "gpt-5.6-sol",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -2120,8 +2254,8 @@
       "replacement": "gpt-5.6-sol",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -2133,22 +2267,23 @@
       "replacement": "gpt-5.6-sol",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
+      "vendor": "Anthropic",
       "model_id": "claude-opus-4-1-20250805",
       "status": "retired",
+      "stated_status": "Retired",
       "announced": "2026-06-05",
       "retirement": "2026-08-05",
       "retirement_not_before": null,
-      "note": null,
-      "vendor": "Anthropic",
-      "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
       "replacement": "claude-opus-4-8",
+      "source_url": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
+      "note": null,
       "family": "Claude Opus 4.1",
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -2160,8 +2295,8 @@
       "replacement": "gpt-5.6-sol",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     },
     {
       "vendor": "OpenAI",
@@ -2173,8 +2308,168 @@
       "replacement": "gpt-5.6-sol",
       "source_url": "https://developers.openai.com/api/docs/deprecations",
       "note": null,
-      "as_of": "2026-08-16",
-      "fetched_at": "2026-08-16T13:37:26+00:00"
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
+    },
+    {
+      "vendor": "OpenAI",
+      "family": "sora-2",
+      "model_id": "sora-2",
+      "status": "retired",
+      "announced": "2026-03-24",
+      "retirement": "2026-09-24",
+      "replacement": "\u2014",
+      "source_url": "https://developers.openai.com/api/docs/deprecations",
+      "note": null,
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
+    },
+    {
+      "vendor": "OpenAI",
+      "family": "sora-2-2025-10-06",
+      "model_id": "sora-2-2025-10-06",
+      "status": "retired",
+      "announced": "2026-03-24",
+      "retirement": "2026-09-24",
+      "replacement": "\u2014",
+      "source_url": "https://developers.openai.com/api/docs/deprecations",
+      "note": null,
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
+    },
+    {
+      "vendor": "OpenAI",
+      "family": "sora-2-2025-12-08",
+      "model_id": "sora-2-2025-12-08",
+      "status": "retired",
+      "announced": "2026-03-24",
+      "retirement": "2026-09-24",
+      "replacement": "\u2014",
+      "source_url": "https://developers.openai.com/api/docs/deprecations",
+      "note": null,
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
+    },
+    {
+      "vendor": "OpenAI",
+      "family": "sora-2-pro",
+      "model_id": "sora-2-pro",
+      "status": "retired",
+      "announced": "2026-03-24",
+      "retirement": "2026-09-24",
+      "replacement": "\u2014",
+      "source_url": "https://developers.openai.com/api/docs/deprecations",
+      "note": null,
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
+    },
+    {
+      "vendor": "OpenAI",
+      "family": "sora-2-pro-2025-10-06",
+      "model_id": "sora-2-pro-2025-10-06",
+      "status": "retired",
+      "announced": "2026-03-24",
+      "retirement": "2026-09-24",
+      "replacement": "\u2014",
+      "source_url": "https://developers.openai.com/api/docs/deprecations",
+      "note": null,
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
+    },
+    {
+      "vendor": "OpenAI",
+      "family": "babbage-002",
+      "model_id": "babbage-002",
+      "status": "retired",
+      "announced": "2025-09-26",
+      "retirement": "2026-09-28",
+      "replacement": "gpt-5.6-terra",
+      "source_url": "https://developers.openai.com/api/docs/deprecations",
+      "note": null,
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
+    },
+    {
+      "vendor": "OpenAI",
+      "family": "davinci-002",
+      "model_id": "davinci-002",
+      "status": "retired",
+      "announced": "2025-09-26",
+      "retirement": "2026-09-28",
+      "replacement": "gpt-5.6-terra",
+      "source_url": "https://developers.openai.com/api/docs/deprecations",
+      "note": null,
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
+    },
+    {
+      "vendor": "OpenAI",
+      "family": "gpt-3.5-turbo-1106",
+      "model_id": "gpt-3.5-turbo-1106",
+      "status": "retired",
+      "announced": "2025-09-26",
+      "retirement": "2026-09-28",
+      "replacement": "gpt-5.6-terra",
+      "source_url": "https://developers.openai.com/api/docs/deprecations",
+      "note": null,
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
+    },
+    {
+      "vendor": "OpenAI",
+      "family": "gpt-3.5-turbo-instruct",
+      "model_id": "gpt-3.5-turbo-instruct",
+      "status": "retired",
+      "announced": "2025-09-26",
+      "retirement": "2026-09-28",
+      "replacement": "gpt-5.6-terra",
+      "source_url": "https://developers.openai.com/api/docs/deprecations",
+      "note": null,
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
+    },
+    {
+      "vendor": "OpenAI",
+      "family": "gpt-5.4-cyber",
+      "model_id": "gpt-5.4-cyber",
+      "status": "retired",
+      "announced": "2026-09-11",
+      "retirement": "2026-10-01",
+      "replacement": "The most capable cyber model available to you.",
+      "source_url": "https://developers.openai.com/api/docs/deprecations",
+      "note": null,
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
+    },
+    {
+      "vendor": "DeepSeek",
+      "family": "deepseek-v4-flash",
+      "model_id": "deepseek-v4-flash",
+      "status": "retired",
+      "stated_status": "retired",
+      "announced": null,
+      "retirement": null,
+      "retirement_not_before": null,
+      "replacement": "deepseek-flash",
+      "source_url": "https://api-docs.deepseek.com/",
+      "note": "DeepSeek's API docs: Use deepseek-flash as the model name. The legacy names deepseek-v4-flash and deepseek-v4-flash-vision-exp are still accepted, but the corresponding models have been retired, their requests are served by the DeepSeek-V4.1-Flash model and billed at the Flash price. No retirement date is published.",
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
+    },
+    {
+      "vendor": "DeepSeek",
+      "family": "deepseek-v4-flash-vision-exp",
+      "model_id": "deepseek-v4-flash-vision-exp",
+      "status": "retired",
+      "stated_status": "retired",
+      "announced": null,
+      "retirement": null,
+      "retirement_not_before": null,
+      "replacement": "deepseek-flash",
+      "source_url": "https://api-docs.deepseek.com/",
+      "note": "DeepSeek's API docs: Use deepseek-flash as the model name. The legacy names deepseek-v4-flash and deepseek-v4-flash-vision-exp are still accepted, but the corresponding models have been retired, their requests are served by the DeepSeek-V4.1-Flash model and billed at the Flash price. No retirement date is published.",
+      "as_of": "2026-10-06",
+      "fetched_at": "2026-10-06T23:17:29+00:00"
     }
   ]
 }

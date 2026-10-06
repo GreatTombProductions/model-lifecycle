@@ -37,8 +37,10 @@
 </main>
 
 <footer>
-  <p>Data read from the vendors' own deprecation pages (Anthropic, OpenAI). DeepSeek publishes no deprecation page — its current models are listed in its API docs; treat it as a documented gap, not a clean bill of health.</p>
-  <p>Vendor pages change. Re-run the open-source pipeline (<code>pipeline/fetch_parse.py</code>) to refresh. This site is a snapshot with an as-of date; the freshness claim lives on every record.</p>
+  <p>Data read from the vendors' own deprecation pages (Anthropic, OpenAI). DeepSeek publishes no deprecation page; the only DeepSeek retirements shown are the ones its API docs state (a footnote naming retired legacy model names, with no dates). Treat DeepSeek as a documented gap, not a clean bill of health.</p>
+  <p>Vendor pages change. This site is a snapshot with an as-of date on every record. Each page is kept as captured; its SHA-256 identifies the exact bytes used:</p>
+  <ul id="captures" class="captures"></ul>
+  <p>The pipeline that produced this snapshot (<code>pipeline/fetch_parse.py</code>) and its tests are in the repository.</p>
 </footer>
 
 <script src="app.js"></script>

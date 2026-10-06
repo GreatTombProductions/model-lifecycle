@@ -68,6 +68,16 @@ function renderCard(m) {
     row.className = "row";
     row.innerHTML = `<span class="label">Retired</span><span class="val">${fmtDate(m.retirement)}</span>`;
     rows.appendChild(row);
+  } else if (m.status === "retired") {
+    const row = document.createElement("div");
+    row.className = "row";
+    row.innerHTML = `<span class="label">Retired</span><span class="val">no date published</span>`;
+    rows.appendChild(row);
+  } else if (m.status === "deprecated") {
+    const row = document.createElement("div");
+    row.className = "row";
+    row.innerHTML = `<span class="label">Shuts down</span><span class="val">date to be announced</span>`;
+    rows.appendChild(row);
   }
 
   if (m.status === "active" && m.retirement_not_before) {
@@ -157,11 +167,17 @@ function renderAsOf() {
       if (data.generated_at) {
         const g = new Date(data.generated_at);
         const spans = (data.sources || []).map((s) => {
-          const cls = s.status === "ok" ? "src-ok" : s.status === "no-deprecation-page" ? "src-gap" : "src-fail";
-          const note = s.status === "ok" ? "" : s.status === "no-deprecation-page" ? " (no deprecation page — gap documented)" : " (fetch failed)";
-          return `<span class="${cls}">${s.vendor}${note}</span>`;
+          const cls = s.status === "ok" ? "src-ok" : s.status === "gap" ? "src-gap" : "src-fail";
+          const note = s.status === "ok" ? "" : s.status === "gap" ? " (no deprecation page — docs statements only)" : " (fetch failed)";
+          return `<span class="${cls}">${escapeHtml(s.vendor)}${note}</span>`;
         }).join(" · ");
         el.innerHTML = `Snapshot ${g.toLocaleString()} · sources: ${spans}`;
+        const list = document.getElementById("captures");
+        if (list) {
+          list.innerHTML = (data.sources || []).map((s) =>
+            `<li><a href="${escapeHtml(s.url)}" target="_blank" rel="noopener">${escapeHtml(s.url.replace(/^https:\/\//, ""))}</a> · fetched ${escapeHtml(new Date(s.fetched_at).toUTCString())} · <code>${escapeHtml(s.raw_sha256 || "no receipt")}</code></li>`
+          ).join("");
+        }
       }
     })
     .catch(() => { el.textContent = "Could not load source status."; });
