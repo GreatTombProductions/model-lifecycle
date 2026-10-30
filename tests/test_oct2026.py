@@ -80,6 +80,26 @@ class TestOctoberLayout(unittest.TestCase):
         for r in recs.values():
             self.assertEqual((r["status"], r["retirement"], r["replacement"]), ("retired", None, "deepseek-flash"))
             self.assertIn("No retirement date is published.", r["note"])
+            self.assertNotIn("1017", r["note"])
+
+    def test_deepseek_oct30_serving_id_is_quoted_and_must_agree(self):
+        oct30 = DEEPSEEK_OCT.replace(
+            "Use <code>deepseek-flash</code> as the model name. The legacy names <code>deepseek-v4-flash</code> and\n"
+            "<code>deepseek-v4-flash-vision-exp</code> are still accepted, but the corresponding models have been retired, their\n"
+            "requests are served by the DeepSeek-V4.1-Flash model and billed at the Flash price.",
+            "Use <code>deepseek-flash</code> as the model name. It is now served by DeepSeek-V4.1-Flash-1017, "
+            "and the calling method remains unchanged. The legacy names <code>deepseek-v4-flash</code> and\n"
+            "<code>deepseek-v4-flash-vision-exp</code> are still accepted, but the corresponding models have been retired; their\n"
+            "requests are served by DeepSeek-V4.1-Flash-1017 and billed at the Flash price.",
+        )
+        recs = {r["model_id"]: r for r in P.parse_deepseek(oct30)}
+        self.assertEqual(set(recs), {"deepseek-v4-flash", "deepseek-v4-flash-vision-exp"})
+        for r in recs.values():
+            self.assertEqual((r["status"], r["retirement"], r["replacement"]), ("retired", None, "deepseek-flash"))
+            self.assertIn("DeepSeek-V4.1-Flash-1017", r["note"])
+        disagree = oct30.replace("served by DeepSeek-V4.1-Flash-1017 and billed", "served by DeepSeek-V4.1-Flash and billed")
+        with self.assertRaises(ValueError):
+            P.parse_deepseek(disagree)
 
 
 class TestRealCaptures(unittest.TestCase):

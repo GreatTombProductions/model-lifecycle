@@ -330,12 +330,19 @@ def parse_deepseek(html: str) -> List[dict]:
     footnote, and the only lifecycle facts are the ones that footnote states.
     Known wordings:
       Aug 2026: "The deepseek-v4-flash model has been updated to ..." (no retirement)
-      Oct 2026: "Use deepseek-flash as the model name. The legacy names X and Y
-                 are still accepted, but the corresponding models have been
-                 retired, their requests are served by the DeepSeek-V4.1-Flash
-                 model and billed at the Flash price."
+      Oct 6 2026: "Use deepseek-flash as the model name. The legacy names X and Y
+                   are still accepted, but the corresponding models have been
+                   retired, their requests are served by the DeepSeek-V4.1-Flash
+                   model and billed at the Flash price."
+      Oct 30 2026: the same legacy retirement, plus "It is now served by
+                   DeepSeek-V4.1-Flash-1017, and the calling method remains
+                   unchanged." The legacy clause uses a semicolon and names the
+                   dated model with no "the ... model" wrapper. The two serving
+                   names in that footnote must be the same id; a disagreement
+                   stops the parse.
     Any other footnote wording stops the parse (fail closed). No retirement date
-    is published, so retired records carry none.
+    is published, so retired records carry none. The quoted note is the footnote
+    the page actually stated.
     """
     model_cell = None
     for row in re.findall(r"<tr[^>]*>(.*?)</tr>", html, flags=re.S):
@@ -347,17 +354,38 @@ def parse_deepseek(html: str) -> List[dict]:
         raise ValueError("DeepSeek docs: model row not found")
     text = _text(html)
     updated = re.search(r"The deepseek-[a-z0-9.-]+ model has been updated to ", text)
+    # October 6: "retired, ... served by the <Name> model".
+    # October 30: an extra "now served by <dated>" sentence, a semicolon,
+    # and "served by <dated>" with no "the" / "model" wrapper.
     legacy = re.search(
         r"Use (deepseek-[a-z0-9.-]+) as the model name\. The legacy names ([^.]+?) are still accepted, "
         r"but the corresponding models have been retired, their requests are served by the "
         r"[A-Za-z0-9.-]+ model and billed at the [A-Za-z]+ price\.",
         text,
     )
+    legacy_now = None
+    if not legacy:
+        legacy = re.search(
+            r"Use (deepseek-[a-z0-9.-]+) as the model name\. "
+            r"It is now served by ([A-Za-z0-9.-]+), and the calling method remains unchanged\. "
+            r"The legacy names ([^.]+?) are still accepted, "
+            r"but the corresponding models have been retired; their requests are served by "
+            r"([A-Za-z0-9.-]+) and billed at the ([A-Za-z]+) price\.",
+            text,
+        )
+        if legacy:
+            legacy_now = legacy.group(2)
+            if legacy_now != legacy.group(4):
+                raise ValueError(
+                    "DeepSeek docs: footnote names two different models as what serves requests "
+                    f"({legacy_now} vs {legacy.group(4)})"
+                )
     if "(1)" in text and not (updated or legacy):
         raise ValueError("DeepSeek docs: model footnote wording not recognized; inspect before parsing")
     records: List[dict] = []
     if legacy:
-        for old in re.findall(r"deepseek-[a-z0-9.-]+", legacy.group(2)):
+        legacy_names = legacy.group(3) if legacy_now else legacy.group(2)
+        for old in re.findall(r"deepseek-[a-z0-9.-]+", legacy_names):
             records.append({
                 "vendor": "DeepSeek",
                 "family": old,
